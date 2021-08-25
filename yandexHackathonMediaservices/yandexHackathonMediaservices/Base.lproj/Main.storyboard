@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="YandexSansDisplay-Bold.ttf">
+            <string>YandexSansDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Form Bage Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FormBageController" customModule="yandexHackathonMediaservices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzJ-T3-BTK">
+                                <rect key="frame" x="12" y="591" width="390" height="239"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ief-1W-oze">
+                                        <rect key="frame" x="165" y="-30" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.2627450980392157" green="0.4823529411764706" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Ebq-R8-WnG"/>
+                                            <constraint firstAttribute="height" constant="60" id="XvZ-5t-6ZE"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQJ-IT-hzc">
+                                        <rect key="frame" x="174.5" y="-21.5" width="41" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="С кем пойти на концерт?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VX7-KR-89P">
+                                        <rect key="frame" x="58" y="58" width="274" height="28"/>
+                                        <fontDescription key="fontDescription" name="YandexSansDisplay-Bold" family="Yandex Sans Display" pointSize="23"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Теперь найти компанию для концерта стало проще" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-P1-qsr">
+                                        <rect key="frame" x="76.5" y="98" width="237" height="43.5"/>
+                                        <fontDescription key="fontDescription" name="YandexSansDisplay-Bold" family="Yandex Sans Display" pointSize="18"/>
+                                        <color key="textColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeZ-Dk-Iei">
+                                        <rect key="frame" x="26" y="173.5" width="348" height="55"/>
+                                        <color key="backgroundColor" red="0.97254901960784312" green="0.8784313725490196" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="zMf-T1-Sje"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="YandexSansDisplay-Bold" family="Yandex Sans Display" pointSize="16"/>
+                                        <state key="normal" title="Попробовать">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tryButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teX-Q7-Aax"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNQ-Bh-4ob">
+                                        <rect key="frame" x="354" y="12" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="2Wl-I1-tAG"/>
+                                            <constraint firstAttribute="height" constant="24" id="4Tl-s0-COY"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="xmark.circle" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qeZ-Dk-Iei" firstAttribute="top" secondItem="ehV-P1-qsr" secondAttribute="bottom" constant="32" id="2fx-yv-i1L"/>
+                                    <constraint firstAttribute="trailing" secondItem="JNQ-Bh-4ob" secondAttribute="trailing" constant="12" id="7pO-mT-XvD"/>
+                                    <constraint firstItem="ehV-P1-qsr" firstAttribute="leading" secondItem="ZzJ-T3-BTK" secondAttribute="leading" constant="76.5" id="DIa-2r-VXH"/>
+                                    <constraint firstItem="qeZ-Dk-Iei" firstAttribute="leading" secondItem="ZzJ-T3-BTK" secondAttribute="leading" constant="26" id="Fy0-CC-ifK"/>
+                                    <constraint firstItem="ehV-P1-qsr" firstAttribute="top" secondItem="VX7-KR-89P" secondAttribute="bottom" constant="12" id="K3M-ir-nUK"/>
+                                    <constraint firstAttribute="trailing" secondItem="ehV-P1-qsr" secondAttribute="trailing" constant="76.5" id="MWk-pl-Fb9"/>
+                                    <constraint firstAttribute="height" constant="239" id="XAu-Pf-fjo"/>
+                                    <constraint firstItem="ief-1W-oze" firstAttribute="centerY" secondItem="ZzJ-T3-BTK" secondAttribute="firstBaseline" id="ekM-gK-F7h"/>
+                                    <constraint firstItem="ief-1W-oze" firstAttribute="centerX" secondItem="ZzJ-T3-BTK" secondAttribute="centerX" id="gqx-ap-5E9"/>
+                                    <constraint firstItem="nQJ-IT-hzc" firstAttribute="centerY" secondItem="ief-1W-oze" secondAttribute="centerY" id="i3N-f9-76S"/>
+                                    <constraint firstAttribute="trailing" secondItem="qeZ-Dk-Iei" secondAttribute="trailing" constant="16" id="lHl-l8-wPn"/>
+                                    <constraint firstItem="JNQ-Bh-4ob" firstAttribute="top" secondItem="ZzJ-T3-BTK" secondAttribute="top" constant="12" id="lth-YI-Jr2"/>
+                                    <constraint firstItem="VX7-KR-89P" firstAttribute="centerX" secondItem="ZzJ-T3-BTK" secondAttribute="centerX" id="nAc-zh-jIn"/>
+                                    <constraint firstItem="VX7-KR-89P" firstAttribute="top" secondItem="ief-1W-oze" secondAttribute="bottom" constant="28" id="oBN-Al-qiM"/>
+                                    <constraint firstItem="nQJ-IT-hzc" firstAttribute="centerX" secondItem="ief-1W-oze" secondAttribute="centerX" id="pbU-VM-J4p"/>
+                                    <constraint firstItem="ehV-P1-qsr" firstAttribute="centerX" secondItem="ZzJ-T3-BTK" secondAttribute="centerX" id="u8p-dY-ogI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZzJ-T3-BTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="78q-so-JVc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZzJ-T3-BTK" secondAttribute="trailing" constant="12" id="Khi-TT-e8R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZzJ-T3-BTK" secondAttribute="bottom" constant="32" id="zUj-fD-xoD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bageView" destination="ZzJ-T3-BTK" id="zAb-B4-kc3"/>
+                        <outlet property="greetingView" destination="ief-1W-oze" id="zao-bN-i0G"/>
+                        <outlet property="tryButton" destination="qeZ-Dk-Iei" id="nGD-8I-GwA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
